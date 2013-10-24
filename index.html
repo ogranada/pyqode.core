@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="PCEF : A Source Code Editing Framework for python/qt applications" />
+    <meta name="description" content="pyQode : A Source Code Editing Framework for python/qt applications" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>PCEF</title>
+    <title>pyQode</title>
   </head>
 
   <body>
@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ColinDuquesnoy/pcef-core">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/ColinDuquesnoy/pyqode.core">View on GitHub</a>
 
-          <h1 id="project_title">PCEF</h1>
+          <h1 id="project_title">pyQode</h1>
           <h2 id="project_tagline">A Source Code Editing Framework for python/qt applications</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ColinDuquesnoy/pcef-core/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ColinDuquesnoy/pcef-core/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/ColinDuquesnoy/pyqode.core/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ColinDuquesnoy/pyqode.core/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -31,102 +31,63 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a name="what-is-pcef" class="anchor" href="#what-is-pcef"><span class="octicon octicon-link"></span></a>What is PCEF?</h1>
+        <p><img src="https://api.travis-ci.org/ColinDuquesnoy/pyqode.core.png?branch=master" alt="alt text" title="Travis-CI build status"><img src="https://pypip.in/d/pyqode.core/badge.png" alt="alt text" title="Number of PyPI downloads"><img src="https://pypip.in/v/pyqode.core/badge.png" alt="alt text" title="Latest PyPI version"></p>
 
-<p>PCEF is a <em>flexible source code editing framework</em> for Python Qt
-applications. <strong>PCEF is a library, not an IDE</strong>.</p>
+<h2>
+<a name="what-is-pyqode" class="anchor" href="#what-is-pyqode"><span class="octicon octicon-link"></span></a>What is pyQode?</h2>
 
-<p><em>pcef-core</em> is the foundation package, it contains everything you need
-to create a generic (language independant) code editor widget. It is the
-mandatory requirement for any pcef extension.</p>
+<p>pyQode is a <em>flexible source code editor widget</em> for Python Qt
+applications. <strong>pyQode is a library/widget, not an IDE</strong>. You can see it as an
+alternative to QScintilla.</p>
 
-<p>The base widget (QCodeEdit) is a simple extension of QPlainTextEdit that
-can be customised by adding extensions (modes and panels).</p>
+<p>pyQode is a <strong>namespace package</strong> made up of the following official packages:</p>
 
-<h1>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h1>
+<ul>
+<li>
+<a href="https://github.com/ColinDuquesnoy/pyqode.core">pyqode.core</a> </li>
+<li><a href="https://github.com/ColinDuquesnoy/pyqode.python">pyqode.python</a></li>
+<li><a href="https://github.com/ColinDuquesnoy/pyqode.widgets">pyqode.widgets</a></li>
+<li>
+<a href="https://github.com/ColinDuquesnoy/pyqode.designer">pyqode.designer</a> </li>
+</ul><p><strong>pyqode.core</strong> is the foundation package, it contains the pyqode base classes (QCodeEdit, Mode, Panel) 
+and a set of builtin modes and panels that are useful for any kind of code editor. With pyqode.core you 
+can already create a generic code editor (similar to gedit, notepad++) with only a few lines of code.</p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
 <p>Here are the core features:</p>
 
 <ul>
-<li>  supports PySide and PyQt4</li>
-<li>  supports Python 2 and Python 3</li>
-<li>  simple widget based on QPlainTextEdit</li>
-<li>  easily customisable (modes and panels)</li>
-<li>  native look and feel close to Qt creator</li>
-<li>  builtin modes and panels (folding, line number, code completion,
+<li> supports PySide and/or PyQt4</li>
+<li> supports Python 2 and/or Python 3</li>
+<li> simple widget based on QPlainTextEdit</li>
+<li> easily customisable (modes and panels)</li>
+<li> native look and feel close to Qt creator</li>
+<li> builtin modes and panels (folding, line number, code completion,
 syntax highlighting)</li>
-<li>  Qt Designer plugin</li>
-<li>  <a href="https://github.com/ColinDuquesnoy/pcef-core/wiki/Extensions">language specific
-extensions</a>
-</li>
-</ul><h1>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+<li> Qt Designer plugin</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>PCEF is licensed under the LGPL v3.</p>
+<p>pyQode is licensed under the MIT license.</p>
 
-<h1>
-<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h1>
-
-<p>pcef-core depends on the following libraries:</p>
+<h2>
+<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h2>
 
 <ul>
-<li>  PyQt4 or PySide</li>
-<li>  Python 2.7 or Python 3 (&gt;= 3.2)</li>
-<li>  pygments</li>
-<li>  setuptools</li>
-</ul><h1>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
-
-<pre><code>$ pip install pcef-core
-</code></pre>
-
-<h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
-
-<p>The <em>public API</em> is exposed by the <em>pcef.core</em> package.</p>
-
-<p>Here is a <a href="https://gist.github.com/ColinDuquesnoy/6096185">simple example using
-PyQt4</a>:</p>
-
-<div class="highlight"><pre><span class="c"># simple example using PyQt4</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">PyQt4</span>  <span class="c"># just to tell pcef we want to use PyQt4.</span>
-<span class="kn">import</span> <span class="nn">pcef.core</span>
-<span class="kn">from</span> <span class="nn">PyQt4.QtGui</span> <span class="kn">import</span> <span class="n">QApplication</span>
-
-
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
-    <span class="n">editor</span> <span class="o">=</span> <span class="n">pcef</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">QGenericCodeEdit</span><span class="p">()</span>
-    <span class="n">editor</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
-    <span class="n">editor</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">)</span>
-    <span class="n">editor</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">app</span><span class="o">.</span><span class="n">exec_</span><span class="p">()</span>
-
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
-</pre></div>
-
-<h1>
-<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h1>
-
-<ul>
-<li>  <a href="https://github.com/ColinDuquesnoy/pcef-core/releases">Downloads</a>
+<li> <a href="https://github.com/ColinDuquesnoy/pyqode.core/releases">Downloads</a>
 </li>
-<li>  <a href="https://github.com/ColinDuquesnoy/pcef-core/">Source repository</a>
+<li> <a href="https://github.com/ColinDuquesnoy/pyqode.core/">Source repository</a>
 </li>
-<li>  <a href="http://packages.python.org/PCEF">Documentation</a> <em>(outdated)</em>
+<li> <a href="http://pyqodecore.readthedocs.org/en/latest/">Documentation</a>
 </li>
-<li>  <a href="https://github.com/ColinDuquesnoy/pcef-core/wiki">Wiki</a>
+<li> <a href="https://github.com/ColinDuquesnoy/pyqode.core/wiki">Wiki</a>
 </li>
-</ul><h1>
-<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h1>
+</ul><h2>
+<a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
 
-<p>Here are a few screenshots of the gui integration example on several
-different platforms:</p>
+<p>Here are a few screenshots of the gui integration example on several different platforms:</p>
 
 <ul>
 <li>  Windows 7:</li>
@@ -157,7 +118,7 @@ different platforms:</p>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">PCEF maintained by <a href="https://github.com/ColinDuquesnoy">ColinDuquesnoy</a></p>
+        <p class="copyright">pyQode maintained by <a href="https://github.com/ColinDuquesnoy">ColinDuquesnoy</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
